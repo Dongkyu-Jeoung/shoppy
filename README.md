@@ -1,2 +1,0 @@
-# shoppy
-vite+express+mysql
