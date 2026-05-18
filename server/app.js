@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import productsRouter from './routes/products.js';
+import signupRouter from './routes/signup.js'
 
 dotenv.config();
 
@@ -17,6 +18,7 @@ app.use(express.json());
 // app.use('/test', cotroller.함수명)              // 컨트롤러에 분배
 
 app.use('/products', productsRouter);
+app.use('/signup', signupRouter)
 
 
 app.listen(PORT, () => {

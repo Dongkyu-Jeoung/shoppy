@@ -14,3 +14,9 @@ select concat('/images/', image) as image, name, info, rate, p.pid, img_list img
 from product p, product_detailinfo pd
 where p.pid = pd.pid;
 
+desc member;
+select * from member;
+
+INSERT INTO MEMBER(id, pwd, name, phone, email, mdate) VALUES();
+
+select * from product_return;
